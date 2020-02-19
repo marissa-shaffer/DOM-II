@@ -7,6 +7,9 @@ anchors.forEach(e => e.addEventListener('mouseover',(event) => {
 }));
 
 // keydown
+const body = document.querySelector('body');
+document.addEventListener('keydown', (event) => {
+    body.style.backgroundColor = '#AC33FF'});
 
 // wheel
 
