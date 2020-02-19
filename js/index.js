@@ -43,6 +43,9 @@ goImg.addEventListener('load', (event) => {
     body.style.backgroundColor = 'red';
 })
 // focus
+anchors.forEach(e => e.addEventListener('focus',(event) => {
+    event.currentTarget.style.color = 'black';
+}));
 
 // resize
 
