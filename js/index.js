@@ -67,3 +67,18 @@ headText.addEventListener('cut', (event)=>{
 introHeader.addEventListener('dblclick',e=>{
     event.currentTarget.style.fontSize = '8rem';
 })
+// Nest two similar events somewhere in the site and prevent the event propagation properly
+const textBox = document.querySelector('.text-content');
+const innerP = document.querySelector('.text-content p');
+textBox.addEventListener('click',e => {
+    e.currentTarget.style.backgroundColor = 'pink';
+})
+innerP.addEventListener('click',e=>{
+    e.stopPropagation();
+    e.currentTarget.style.backgroundColor = 'orange';
+})
+
+// Stop the navigation items from refreshing the page
+anchors.forEach(e => e.addEventListener('click', (event) => {
+    event.preventDefault();
+}));
