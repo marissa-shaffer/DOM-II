@@ -48,6 +48,9 @@ anchors.forEach(e => e.addEventListener('focus',(event) => {
 }));
 
 // resize
+window.addEventListener('resize', i => {
+    body.style.backgroundColor = 'lightgrey';
+})
 
 // scroll
 
