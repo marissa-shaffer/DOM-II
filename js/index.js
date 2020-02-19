@@ -57,6 +57,10 @@ window.addEventListener('scroll', i => {
     body.style.backgroundColor = 'lightyellow';
 })
 
-// select
+// cut
+const headText = document.querySelector('.intro p')
+headText.addEventListener('cut', (event)=>{
+    event.currentTarget.style.color = 'blue';
+});
 
 // dblclick
