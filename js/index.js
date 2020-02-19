@@ -9,9 +9,15 @@ anchors.forEach(e => e.addEventListener('mouseover',(event) => {
 // keydown
 const body = document.querySelector('body');
 document.addEventListener('keydown', (event) => {
-    body.style.backgroundColor = '#AC33FF'});
+    body.style.backgroundColor = '#AC33FF'
+});
 
 // wheel
+const introHeader = document.querySelector('.intro h2');
+introHeader.addEventListener('wheel', (event)=> {
+    event.preventDefault();
+    event.currentTarget.style.fontSize = '10rem';
+});
 
 // drag / drop
 
