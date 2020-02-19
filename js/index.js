@@ -64,3 +64,6 @@ headText.addEventListener('cut', (event)=>{
 });
 
 // dblclick
+introHeader.addEventListener('dblclick',e=>{
+    event.currentTarget.style.fontSize = '8rem';
+})
