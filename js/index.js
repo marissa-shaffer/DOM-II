@@ -38,7 +38,10 @@ introHeader.addEventListener('drop',(event) => {
 });
 
 // load
-
+goImg.addEventListener('load', (event) => {
+    goImg.style.width = '20px';
+    body.style.backgroundColor = 'red';
+})
 // focus
 
 // resize
