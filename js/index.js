@@ -53,6 +53,9 @@ window.addEventListener('resize', i => {
 })
 
 // scroll
+window.addEventListener('scroll', i => {
+    body.style.backgroundColor = 'lightyellow';
+})
 
 // select
 
