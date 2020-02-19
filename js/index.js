@@ -20,6 +20,22 @@ introHeader.addEventListener('wheel', (event)=> {
 });
 
 // drag / drop
+const introImg = document.querySelector('.intro img');
+const goImg = document.querySelector('.img-content img');
+
+
+introImg.addEventListener('drag',(event) => {
+    event.currentTarget.style.width = '400px';
+})
+introImg.addEventListener('dragend',(event) => {
+    event.currentTarget.style.width = '800px';
+})
+introHeader.addEventListener('dragover',(event) => {
+    event.preventDefault();
+});
+introHeader.addEventListener('drop',(event) => {
+    body.style.backgroundColor = 'purple';
+});
 
 // load
 
